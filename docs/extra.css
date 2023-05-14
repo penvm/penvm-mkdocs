@@ -1,0 +1,40 @@
+h2.doc-heading {}
+
+h3.doc-heading,
+.doc-class-name {
+    border-top: solid 3px #6ab0de;
+    width: 100%;
+    background-color: #e7f2fa;
+    padding: 6px 4px 12px 8px;
+    margin-top: 6px;
+    display: block;
+}
+
+h4.doc-heading,
+.doc-function-name {
+    border-left: solid 3px #6ab0de;
+    background-color: #e7f2fa;
+    width: 100%;
+    padding: 6px 4px 12px 8px;
+    display: block;
+    margin-top: 6px;
+}
+
+
+div.doc.doc-object.doc-module {
+    padding-bottom: 16px;
+}
+
+div.doc.doc-object.doc-class {
+    padding-bottom: 16px;
+}
+
+div.doc.doc-object.doc-function {
+    margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+span.fm {
+    font-style: italic;
+}
