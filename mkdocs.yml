@@ -1,0 +1,76 @@
+site_name: PENVM API
+
+nav:
+    - "Main": index.md
+    - "Client": penvm.client.md
+    - "Server": penvm.server.md
+    - "Library": penvm.lib.md
+    - "Kernels": penvm.kernels.md
+    - "Ext": penvm.ext.md
+
+theme:
+    name: readthedocs
+    #name: material
+
+extra_css:
+    - extra.css
+
+
+plugins:
+- search
+- autorefs
+- coverage
+- section-index
+- mkdocstrings:
+    default_handler: python
+    handlers:
+        python:
+            paths:
+                - penvm/src/client
+                - penvm/src/server
+                - penvm/src/lib
+                - penvm/src/kernels
+                - penvm/src/ext
+            options:
+                # https://mkdocstrings.github.io/python/usage/configuration/general/
+                allow_inspection: true
+                show_bases: true
+                show_source: true
+                # https://mkdocstrings.github.io/python/usage/configuration/headings/
+                heading_level: 2
+                show_root_heading: true
+                show_root_toc_entry: true
+                show_root_full_path: true
+                show_root_members_full_path: false
+                show_object_full_path: false
+                show_category_heading: false
+                # https://mkdocstrings.github.io/python/usage/configuration/members/
+                members_order: alphabetical
+                group_by_category: true
+                # https://mkdocstrings.github.io/python/usage/configuration/docstrings/
+                docstring_style: google
+                docstring_options: {}
+                ignore_init_summary: false
+                trim_doctest_flags: true
+                docstring_section_style: table
+                merge_init_into_class: false
+                show_if_no_docstring: false
+                show_docstring_attributes: true
+                show_docstring_description: true
+                show_docstring_examples: true
+                show_docstring_other_parameters: true
+                show_docstring_parameters: true
+                show_docstring_raises: true
+                show_docstring_receives: true
+                show_docstring_returns: true
+                show_docstring_warns: true
+                show_docstring_yields: true
+                # https://mkdocstrings.github.io/python/usage/configuration/signatures/
+                annotations_path: brief
+                line_length: 96
+                show_signature: true
+                show_signature_annotations: false
+                separate_signature: false
+                signature_crossrefs: false
+                #
+                enable_inventory: yes
